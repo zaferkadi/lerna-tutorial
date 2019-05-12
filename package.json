@@ -1,16 +1,29 @@
 {
   "name": "lerna-tutorial",
   "version": "1.0.0",
-  "description": "",
+  "private": true,
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "lerna run start --parallel",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "new-version": "node_modules/.bin/lerna version --conventional-commits --yes"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "lerna": "^3.13.4",
-    "microbundle": "^0.11.0"
-  }
+    "lerna": "^3.13.4"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zaferkadi/lerna-tutorial.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zaferkadi/lerna-tutorial/issues"
+  },
+  "homepage": "https://github.com/zaferkadi/lerna-tutorial#readme",
+  "description": ""
 }
