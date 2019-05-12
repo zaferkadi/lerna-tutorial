@@ -5,14 +5,14 @@
   "main": "index.js",
   "scripts": {
     "start": "lerna run start --parallel",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "new-version": "node_modules/.bin/lerna version --conventional-commits --yes"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "lerna": "^3.13.4",
-    "new-version": "node_modules/.bin/lerna version --conventional-commits --yes"
+    "lerna": "^3.13.4"
   },
   "workspaces": [
     "packages/*"
