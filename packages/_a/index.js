@@ -1,3 +1,4 @@
 module.exports = {
-  whoami: "package _a"
+  whoami: "package _a this is promising",
+  more: "hey"
 };
